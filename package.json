@@ -1,0 +1,15 @@
+{
+  "name": "servercreation",
+  "version": "1.0.0",
+  "description": "Server creation Practice!!!",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sraj",
+  "license": "ISC",
+  "devDependencies": {
+    "nodeman": "^1.1.2"
+  }
+}
