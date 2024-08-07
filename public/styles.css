@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1191fa;
     color: white;
     padding: 20px;
     text-align: center;
@@ -39,11 +39,11 @@ section {
 }
 
 h2 {
-    color: #4CAF50;
+    color: #1191fa;
 }
 
 a {
-    color: #4CAF50;
+    color: #1191fa;
     text-decoration: none;
 }
 
@@ -54,9 +54,127 @@ a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #1191fa;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Image Slider Styles */
+#image-slider {
+    position: relative;
+    width: 70%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+.auto-btn1 {
+    background: #fff;
+}
+
+.auto-btn2 {
+    background: #fff;
+}
+
+.auto-btn3 {
+    background: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    width: 100%;
+    height: auto;
+}
+#about{
+    width:40%;
+height: auto;
+}
+#image-slider{
+    width:40%;
+    height:auto;
 }

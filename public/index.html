@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Researcher Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header>
@@ -16,14 +17,55 @@
         </div>
       </div>
     </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a computational biologist with a passion for understanding the
-        complexities of biological systems through computational methods and
-        data analysis.
-      </p>
-    </section>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a computational biologist with a passion for understanding the
+          complexities of biological systems through computational methods and
+          data analysis.
+        </p>
+      </section>
+      <!-- Image slidr -->
+      <!-- Image Slider Section -->
+      <section id="image-slider">
+        <div class="slider">
+          <div class="slides">
+            <!-- Radio buttons for navigation -->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+
+            <!-- Slide images -->
+            <div class="slide first">
+              <img src="img1.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img2.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img3.jpg" alt="" />
+            </div>
+
+            <!-- Automatic navigation -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+          </div>
+
+          <!-- Manual navigation -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
+      <!-- End of image slider -->
+    </div>
+
     <section id="research">
       <h2>Research Interests</h2>
       <ul>

@@ -58,6 +58,8 @@ const server = http.createServer((req, res) => {
         contentType = "text/css";
       } else if (extname === ".jpg") {
         contentType = "text/jpeg";
+      } else if (extname === ".js") {
+        contentType = "application/javascript";
       } else {
         contentType = "text/html";
       }
@@ -68,6 +70,6 @@ const server = http.createServer((req, res) => {
   });
 });
 //Start server for listening
-server.listen(5000, "127.0.0.1", () => {
+server.listen(5000, "0.0.0.0", () => {
   console.log(`Server is listening on Port : ${5000}`);
 });
