@@ -8,7 +8,7 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
-const indexHtml = fs.readFileSync("./public/index.html", "utf-8");
+//const indexHtml = fs.readFileSync("./public/index.html", "utf-8");
 //! Step-2 create Server
 let contentType;
 const server = http.createServer((req, res) => {
